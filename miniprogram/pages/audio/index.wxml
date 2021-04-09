@@ -1,0 +1,62 @@
+<view style="height: calc(100vh - {{tabHeight}} - env(safe-area-inset-bottom));width:100%;position:relative;">
+  <scroll-view scroll-y="{{true}}" class="text" style="height: calc(100vh - {{tabHeight}} - env(safe-area-inset-bottom) - 720rpx)">
+    <view><text style="display:{{textDis}}">{{text}}</text><text>{{value}}</text></view>
+  </scroll-view>
+
+  <view class="switch">
+    <van-switch style="font-size:0" disabled="{{!click}}" checked="{{ checked }}" bind:change="openTran" size="60rpx" />
+    <view class="text">{{switchText}}</view>
+  </view>
+
+  <scroll-view scroll-y="{{true}}" class="list" style="height: 192rpx;display:{{checked == true ? '':'none'}}">
+    <view><text style="display:{{textDis}}">{{textEn}}</text><text>{{valueEn}}</text></view>
+  </scroll-view>
+  
+  <view class="btnView">
+    <view class="btn">
+      <view class="voiceAnim">
+        <view class="anim">
+          <view wx:for="{{voiceAnim}}" wx:key="voiceAnim" class="animItem">
+            <view style="height:0%;" class="animBgItem {{click == false ? item : ''}}"></view>
+          </view>
+        </view>
+      </view>
+      <view class="recTime">{{timecount}}</view>
+      <view class="play" bindtap="linkSocket" style="display: {{click == true ? 'block':'none'}}">
+        <image src="../../images/play.png" mode="widthFix" />
+      </view>
+      <view class="play" bindtap="wsStop" style="display: {{click == true ? 'none':'block'}}">
+        <image src="../../images/pause.png" mode="widthFix" />
+      </view>
+      <view bindtap="copyText" class="copyView">
+        <text>复制</text>
+      </view>
+      <view bindtap="uploadMp3" class="uploadView">
+        <image src="../../images/upload.png" mode="widthFix" />
+        <text>上传音频</text>
+      </view>
+    </view>
+  </view>
+</view>
+
+<van-tabbar active="{{ active }}" bind:change="onChange">
+  <van-tabbar-item wx:for="{{icon}}" wx:key="icon" class="class{{index}}">
+    <image slot="icon" src="{{ item.normal }}" mode="aspectFit" class="tabIcon" />
+    <image slot="icon-active" src="{{ item.active }}" mode="aspectFit" class="tabIcon" />
+    {{item.title}}
+  </van-tabbar-item>
+</van-tabbar>
+
+<van-dialog id="van-dialog" use-slot bind:confirm="dialogConfirm" bind:cancel="dialogCancel">
+  <van-cell-group>
+    <van-field
+      value="{{ emailValue }}"
+      label="邮箱"
+      placeholder=""
+      required
+      error-message="{{emailError}}"
+      bind:change="emailValueChange"
+      border="{{ false }}"
+    />
+  </van-cell-group>
+</van-dialog>

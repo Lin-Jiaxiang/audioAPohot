@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "van-dialog": "../../components/dialog/index"
+  },
+  "disableScroll": true
+}

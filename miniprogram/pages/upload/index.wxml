@@ -1,0 +1,6 @@
+<van-panel custom-class="panel" wx:for="{{list}}" wx:key="index" title="{{item.name}}" desc="上传时间：{{item.createTime}}" >
+  <view class="btn" bindtap="lookforDetail" data-taskid="{{item.taskid}}">查看</view>
+</van-panel>
+<!-- status="{{item.state == false? '解析中':'完成'}}" -->
+
+<van-dialog id="van-dialog" />

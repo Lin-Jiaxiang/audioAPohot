@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "van-cell": "../../components/cell/index",
+    "van-cell-group": "../../components/cell-group/index",
+    "van-field": "../../components/field/index",
+    "van-dialog": "../../components/dialog/index",
+    "van-switch": "../../components/switch/index"
+  },
+  "disableScroll": true
+}

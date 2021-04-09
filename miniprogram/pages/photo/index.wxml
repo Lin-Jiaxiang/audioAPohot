@@ -1,0 +1,21 @@
+<view style="height: calc(100vh - {{tabHeight}} - env(safe-area-inset-bottom) - 176rpx);width:100%;position:relative;">
+  <camera device-position="back" flash="off" binderror="error" style="width: 100%; height: 100%;display:{{cameraShow}}"></camera>
+  <image mode="widthFix" style="width:100%" src="{{photoUrl}}" />
+</view>
+<!-- style="display:{{cameraShow}}" -->
+<view class="takeView">
+  <view class="chooseView">
+    <image mode="widthFix" class="chooseImg" src="../../images/choose.png" bindtap="Cphoto"></image>
+  </view>
+  <image mode="widthFix" src="../../images/clip1.png" class="takeIcon" class="{{isIPX == true ? 'takeIconIPX' : 'takeIcon'}}" bindtap="takePhoto"></image>
+</view>
+
+<van-dialog id="van-dialog" />
+
+<van-tabbar active="{{ active }}" bind:change="onChange">
+  <van-tabbar-item wx:for="{{icon}}" wx:key="icon" class="class{{index}}">
+    <image slot="icon" src="{{ item.normal }}" mode="aspectFit" class="tabIcon" />
+    <image slot="icon-active" src="{{ item.active }}" mode="aspectFit" class="tabIcon" />
+    {{item.title}}
+  </van-tabbar-item>
+</van-tabbar>

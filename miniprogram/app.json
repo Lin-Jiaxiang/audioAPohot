@@ -1,0 +1,22 @@
+{
+  "pages": [
+    "pages/audio/index",
+    "pages/photo/index",
+    "pages/upload/index"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "会议记录",
+    "navigationBarTextStyle": "black"
+  },
+  "usingComponents": {
+    "van-tabbar": "components/tabbar/index",
+    "van-tabbar-item": "components/tabbar-item/index",
+    "van-button": "components/button/index",
+    "van-loading": "components/loading/index"
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

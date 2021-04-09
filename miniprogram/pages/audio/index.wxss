@@ -1,0 +1,354 @@
+page{
+    height: 100%;
+	width: 100%;
+}
+.text{
+    width: 96%;
+    margin: 0 auto;
+    top: 0;
+    position: relative;
+    background: #fff;
+    padding: 20rpx 0;
+    font-size: 34rpx;
+}
+.list{
+    width: 96%;
+    margin: 0 auto;
+    position: relative;
+    background: #fff;
+    padding: 20rpx 0;
+    font-size: 34rpx;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btnView{
+    width: 100%;
+    position: absolute;
+    bottom: 20rpx;
+}
+.timeView{
+    width: 100%;
+    position: absolute;
+    bottom: 140rpx;
+}
+.uploadView{
+    background: #1989fa;
+    position:absolute;
+    left:80rpx;
+    height:100rpx;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    border-radius: 6rpx;
+    padding: 10rpx 0;
+    font-size: 28rpx;
+}
+.uploadView text{
+    display: block;
+    width: 100%;
+    color: #fff;
+}
+.uploadView image{
+    width: 20px;
+}
+.copyView{
+    position:absolute;
+    right:80rpx;
+    height:100rpx;
+    line-height:100rpx;
+}
+.copyView text{
+    border:2rpx solid #1989fa;
+    border-radius: 28rpx;
+    padding:8rpx 20rpx;
+    background: #1989fa;
+    color: #fff;
+    font-size: 28rpx;
+}
+.delView{
+    position:absolute;
+    left:80rpx;
+    height:100rpx;
+    line-height:100rpx;
+}
+.delView text{
+    border:2rpx solid #fa1919;
+    border-radius: 28rpx;
+    padding:8rpx 20rpx;
+    background: #fa1919;
+    color: #fff;
+    font-size: 28rpx;
+}
+.play{
+    width: 140rpx;
+    height: 140rpx;
+}
+.play image{
+    width: 100%;
+}
+.tabIcon{
+    width: 30px;
+    height: 18px;
+}
+.item {
+    display: inline-block;
+    width: 22px;
+    margin-right: 5px;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    background-color: #1989fa;
+    border-radius: 2px;
+}
+.van-count-down{
+    display: flex;
+    justify-content: center;
+}
+
+.van-button--default{
+	width: 100%!important;
+}
+.van-dialog__button{
+	width: 50%!important;
+}
+.recTime{
+    position: absolute;
+    top: -50rpx;
+}
+.voiceAnim{
+    width: 100%;
+    height: 60rpx;
+    position: absolute;
+    top: -140rpx;
+}
+.voiceAnim .anim{
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.animItem{
+    width: 12rpx;
+    height: 100%;
+    border-radius: 28%;
+    background: #eee;
+    position: relative;
+}
+.animBgItem{
+    position: absolute;
+    bottom: 0;
+    background: #1989fa;
+    width: 100%;
+    border-radius: 28%;
+}
+.slideInUp0{
+    animation:slideInUp0 1s linear infinite alternate; 
+}
+@keyframes slideInUp0
+{
+    from{
+        height: 10%;
+    }
+
+    to{
+        height: 90%;
+    }
+}
+.slideInUp1{
+    animation:slideInUp1 1s linear infinite alternate; 
+}
+@keyframes slideInUp1
+{
+    from{
+        height: 10%;
+    }
+
+    to{
+        height: 60%;
+    }
+}
+.slideInUp2{
+    animation:slideInUp2 1s linear infinite alternate; 
+}
+@keyframes slideInUp2
+{
+    from{
+        height: 0%;
+    }
+
+    to{
+        height: 80%;
+    }
+}
+.slideInUp3{
+    animation:slideInUp3 1s linear infinite alternate; 
+}
+@keyframes slideInUp3
+{
+    from{
+        height: 10%;
+    }
+
+    to{
+        height: 80%;
+    }
+}
+.slideInUp4{
+    animation:slideInUp4 1s linear infinite alternate; 
+}
+@keyframes slideInUp4
+{
+    from{
+        height: 0%;
+    }
+
+    to{
+        height: 100%;
+    }
+}
+.slideInUp5{
+    animation:slideInUp5 1s linear infinite alternate; 
+}
+@keyframes slideInUp5
+{
+    from{
+        height: 20%;
+    }
+
+    to{
+        height: 100%;
+    }
+}
+.slideInUp6{
+    animation:slideInUp6 1s linear infinite alternate; 
+}
+@keyframes slideInUp6
+{
+    from{
+        height: 30%;
+    }
+
+    to{
+        height: 80%;
+    }
+}
+.slideInUp7{
+    animation:slideInUp7 1s linear infinite alternate; 
+}
+@keyframes slideInUp7
+{
+    from{
+        height: 10%;
+    }
+
+    to{
+        height: 60%;
+    }
+}
+.slideInUp8{
+    animation:slideInUp8 1s linear infinite alternate; 
+}
+@keyframes slideInUp8
+{
+    from{
+        height: 20%;
+    }
+
+    to{
+        height: 80%;
+    }
+}
+.slideInUp9{
+    animation:slideInUp9 1s linear infinite alternate; 
+}
+@keyframes slideInUp9
+{
+    from{
+        height: 10%;
+    }
+
+    to{
+        height: 90%;
+    }
+}
+.slideInUp10{
+    animation:slideInUp10 1s linear infinite alternate; 
+}
+@keyframes slideInUp10
+{
+    from{
+        height: 0%;
+    }
+
+    to{
+        height: 60%;
+    }
+}
+.slideInUp11{
+    animation:slideInUp11 1s linear infinite alternate; 
+}
+@keyframes slideInUp11
+{
+    from{
+        height: 10%;
+    }
+
+    to{
+        height: 60%;
+    }
+}
+.slideInUp12{
+    animation:slideInUp12 1s linear infinite alternate; 
+}
+@keyframes slideInUp12
+{
+    from{
+        height: 10%;
+    }
+
+    to{
+        height: 60%;
+    }
+}
+.slideInUp13{
+    animation:slideInUp13 1s linear infinite alternate; 
+}
+@keyframes slideInUp13
+{
+    from{
+        height: 10%;
+    }
+
+    to{
+        height: 60%;
+    }
+}
+.slideInUp14{
+    animation:slideInUp14 1s linear infinite alternate; 
+}
+@keyframes slideInUp14
+{
+    from{
+        height: 10%;
+    }
+
+    to{
+        height: 60%;
+    }
+}
+.switch{
+    display: flex;
+    align-items: center;
+    margin-left: 20rpx;
+}
+.switch .text{
+    font-size: 30rpx;
+    margin-left: 16rpx;
+}
